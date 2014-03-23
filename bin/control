@@ -48,6 +48,7 @@ function start() {
 	  export LD_LIBRARY_PATH=/opt/rh/ruby193/root/usr/lib64
 	  export BUNDLE_GEMFILE=${OPENSHIFT_REPO_DIR}Gemfile
 	cd ${OPENSHIFT_REPO_DIR}
+	export LANG=ja_JP.UTF-8
 	echo "Executing bundle install"
 	bundle install
 	echo "Starting Jekyll server"
